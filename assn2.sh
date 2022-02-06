@@ -1,12 +1,17 @@
 #!/bin/bash -x
-echo "Enter the year:"
-read y
-a=`expr $y % 4`
-b=`expr $y % 100` 
-c=`expr $y % 400`
-if [ $a -eq 0 -a $b -ne 0 -o $c -eq 0 ]
-then 
-echo " $y is leap year "
-else
-echo " $y is not a leap year"
-fi
+echo " enter a first number"
+read a
+echo " enter a first number"
+read b
+echo " enter a first number"
+read c
+echo " enter a first number"
+read d
+echo " enter a first number"
+read e
+
+sum=$(($a+$b+$c+$d+$e))
+avg=$(($sum/5))
+echo " the sum of number is:" $sum
+echo " the average of number is:" $avg
+
